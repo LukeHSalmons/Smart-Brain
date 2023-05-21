@@ -10,7 +10,7 @@ import ParticlesBg from 'particles-bg'
 import './App.css';
 
 const returnClarifaiRequestOptions = (imageUrl) => {
-  const PAT = 'ca03f380f0564ba28b15b895a8a8cd32';
+  const PAT = process.env.CLARIFAI_PAT;
   const USER_ID = 'it-is-me28';       
   const APP_ID = 'SmartBrain';
   const MODEL_ID = 'face-detection'; 
